@@ -37,9 +37,11 @@
 }
 
 .dessin{
+	cursor:pointer;
 }
 
-.mail{
+.card{
+	cursor:pointer;
 }
 
 
