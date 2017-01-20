@@ -1,0 +1,46 @@
+
+.signature{
+	font-family: Helvetica, Arial;
+	font-weight: 100;
+	text-align: right;
+
+}
+
+.accroche{
+	font-family: Helvetica, Arial;
+	font-weight: 100;
+	font-size: 15px;
+	text-align: right;
+}
+
+.bandeau{
+	background-color: #EEEEEE;
+	display: flex;
+	justify-content: space-around;
+}
+
+.texte-front{
+	color:#EEEEEE;
+	font-family: Helvetica;
+	font-weight: lighter;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+}
+.texte-back{
+	color:#000000;
+	font-family: Helvetica, Arial;
+	font-weight: lighter;
+	position: absolute;
+	text-align: center;
+	top: 0px;
+}
+
+.dessin{
+}
+
+.mail{
+}
+
+
+

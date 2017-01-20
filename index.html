@@ -1,0 +1,187 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/voeux.css">
+</head>
+
+<body>
+
+	<div class="contenu">
+	
+	
+	
+	<div class="bandeau">
+		<div class="card"> 
+			<div class="front"> 
+				<div class="texte-front">
+					<p>
+						Un<br> 
+						projet<br> 
+						numérique<br> 
+						expérimental 
+						
+					</p>
+				</div>
+				<img class='dessin' src="img/interrogation.png"/>	
+			</div> 
+			<div class="back">
+				<img class='dessin' src="img/verso.png"/>
+				<div class="texte-back">
+					<p>
+						Proposez <br>
+						un <br>  
+						projet tuteuré<br>
+						<br>							
+						septembre - avril <br>
+						<a class="mail" href="mailto:ptut-mmi@univ-tln.fr">		
+							ptut-mmi@univ-tln.fr
+						</a>
+					</p>
+				</div>
+			</div> 
+		</div>
+
+		<div class="card"> 
+			<div class="front"> 
+				<div class="texte-front">
+					<p>
+						Un<br> 
+						besoin<br> 
+						multimédia<br> 
+						ponctuel 
+					</p>
+				</div>
+				<img class='dessin' src="img/suspension.png"/>	
+			</div> 
+			<div class="back">
+				<img class='dessin' src="img/verso.png"/>
+				<div class="texte-back">
+					<p>
+						Hébergez <br>
+						un   
+						stagiaire<br>
+						Bac+1 ou 
+						Bac+2<br>
+						<br>							
+						février-juin <br>
+						<a class="mail" href="mailto:stage-mmi@univ-tln.fr">		
+							stage-mmi@univ-tln.fr
+						</a>
+					</p>
+				</div>
+			</div> 
+		</div>
+
+		<div class="card"> 
+			<div class="front"> 
+				<div class="texte-front">
+					<p>
+						Envie<br>
+						d'une nouvelle<br> 
+						stratégie<br> 
+						web <br> 
+					</p>
+				</div>
+				<img class='dessin' src="img/arobase.png"/>	
+			</div> 
+			<div class="back">
+				<img class='dessin' src="img/verso.png"/>
+				<div class="texte-back">
+					<p>
+						Optez  pour<br>  
+						l'alternance<br>
+						sur deux ans<br>
+						<br>							
+						15 jours/mois <br>
+						<a class="mail" href="mailto:alt-mmi@univ-tln.fr">		
+							alt-mmi@univ-tln.fr
+						</a>
+					</p>
+				</div>
+			</div> 
+		</div>
+
+		<div class="card"> 
+			<div class="front"> 
+				<div class="texte-front">
+					<p>
+						Une<br> 
+						découverte<br> 
+						des outils <br>
+						de demain <br> 
+					</p>
+				</div>
+				<img class='dessin' src="img/exclamation.png"/>	
+			</div> 
+			<div class="back">
+				<img class='dessin' src="img/verso.png"/>
+				<div class="texte-back">
+					<p>
+						Participez <br>
+						aux conférences <br>  
+						du café multimédia<br>
+						<br>							
+						3 mars 2017 <br>
+						<a class="mail" href="mailto:cafe-mmi@univ-tln.fr">		
+							cafe-mmi@univ-tln.fr
+						</a>
+					</p>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="accroche"> 
+		<p>
+			<i>Laissez vous tenter par une nouvelle expérience du multimédia </i>
+		</p>
+	</div>
+	<div class="signature"> 
+		<p>
+ 			<i> MMI@Work</i>
+ 		</p>	
+ 	</div>
+	
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+	<script>
+
+		function redimensionneElement(w){
+
+
+			$(".card").css("width",(w*0.2)+'px');
+			$(".card").css("height",(w*0.2)+'px');
+			$(".dessin").css("width",(w*0.2)+'px');
+			$(".dessin").css("height",(w*0.2)+'px');
+			$(".bandeau").css("height",(w*0.2)+'px');
+			$(".bandeau").css("padding",(w*0.04)+'px');
+
+
+			$(".texte-front").css("width",(w*0.2)+'px');
+			$(".texte-front").css("height",(w*0.2)+'px');
+			$(".texte-front").css("font-size",(w*0.025)+'px')
+			$(".texte-front").css("top",(w*0.00)+'px')
+			$(".texte-front").css("left",(w*0.00)+'px')
+
+			$(".texte-back").css("width",(w*0.2)+'px');
+			$(".texte-back").css("height",(w*0.2)+'px');
+			$(".texte-back").css("font-size",(w*0.02)+'px')
+			$(".texte-back").css("top",(w*0.0)+'px')
+			$(".texte-back").css("left",(w*0.0)+'px')
+			$(".mail").css("font-size",(w*0.015)+'px')
+		}
+	
+		// dimensionner les objets à l'ouverture de la fenetre
+		redimensionneElement(window.innerWidth);
+		
+    	// redimensionner les objets au changement de taille
+		window.addEventListener('resize', function(){
+			redimensionneElement(window.innerWidth);
+		});
+		
+		$(".card").flip();
+	</script>
+
+</body>
+
+</html>
