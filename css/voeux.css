@@ -1,48 +1,95 @@
 
+.citation{
+	font-family: 'paulinho_pedra_azulnormal', 'Hevetica', 'Arial';
+	
+	}
+
 .signature{
-	font-family: Helvetica, Arial;
-	font-weight: 100;
+	font-family: 'latobold', 'Helvetica', 'Arial';
 	text-align: right;
+	color:93338a;
 
 }
 
 .accroche{
-	font-family: Helvetica, Arial;
-	font-weight: 100;
+	font-family: 'latolight','Helvetica', 'Arial';
 	font-size: 15px;
 	text-align: right;
 }
 
-.bandeau{
-	background-color: #EEEEEE;
+#bandeau{
+	background-color: #f4f2f2;
+}
+
+.cards{
 	display: flex;
 	justify-content: space-around;
 }
 
 .texte-front{
-	color:#EEEEEE;
-	font-family: Helvetica;
-	font-weight: lighter;
+	color:#FFFFFF;
 	position: absolute;
 	text-align: center;
 	top: 0px;
 }
 .texte-back{
-	color:#000000;
-	font-family: Helvetica, Arial;
-	font-weight: lighter;
+	color:#FFFFFF;
 	position: absolute;
 	text-align: center;
 	top: 0px;
 }
 
-.dessin{
-	cursor:pointer;
+
+.icon{
+	position: absolute;
+	}
+
+.dessin-front{
+  background:#93338a;
+  border-radius:50%;
+  border:2px solid #93338a; 
 }
+
+.dessin-back{
+  background:#0294aa;
+  border-radius:50%;
+  border:2px solid #0294aa; 
+}
+
+
 
 .card{
 	cursor:pointer;
+	font-family: 'latolight','Helvetica', 'Arial';
+}
+
+a{	
+	color:#FFFFFF;
+
+	
+	}
+
+
+#footer-left{
+	float:left;
 }
 
 
 
+#footer-right{
+	float:right;
+}
+
+#explication{
+	font-family:'paulinho_pedra_azulnormal','Helvetica', 'Arial';
+	text-align: center;
+}
+
+#titre{
+	color:93338a;
+	}
+	
+	
+#soustitre{
+	color:0294aa;
+}
