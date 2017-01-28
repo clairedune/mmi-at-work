@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width" />
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="css/voeux.css">
@@ -163,6 +164,62 @@
 
 		function redimensionneElement(w){
 
+			var margev = 0.04;
+
+
+
+			if(w<600){
+				$(".card").css("display","block");
+				margev = 0.4;
+				$("#titre").css("font-size",(w*0.05)+'px');
+				$("#soustitre").css("font-size",(w*0.04)+'px');
+				$("#explication").css("margin-top",(w*0.2*margev)+'px');
+
+
+				$(".texte-front").css("width",(w*0.2)+'px');
+				$(".texte-front").css("height",(w*0.2)+'px');
+				$(".texte-front").css("font-size",(w*0.023)+'px');
+				$(".texte-front").css("top",(w*0.1)+'px');
+				$(".texte-front").css("left",(w*0.0)+'px');
+
+				$(".texte-back").css("width",(w*0.2)+'px');
+				$(".texte-back").css("height",(w*0.2)+'px');
+				$(".texte-back").css("font-size",(w*0.02)+'px');
+				$(".texte-back").css("top",(w*0.04)+'px');
+				$(".texte-back").css("left",(w*0.0)+'px');
+
+				$("#bandeau").css("width",(100)+'%');
+				$("#footer").css("padding",(w*0.02)+'px');
+				$("#footer-left").css("padding-right",(w*0.02)+'px');
+				$("#footer-left").css("width",(w*0.7)+'px');
+				$("#footer-right").css("padding-top",(w*0.015)+'px');
+
+				$("#logo").css("width",(w*0.105)+'px');
+				$(".accroche").css("font-size",(w*0.025)+'px');
+				$(".signature").css("font-size",(w*0.03)+'px');
+
+			}
+			else
+			{
+				$("#titre").css("font-size",(w*0.03)+'px');
+				$("#soustitre").css("font-size",(w*0.022)+'px');
+				$("#explication").css("margin-top",(w*margev)+'px');
+				$(".texte-front").css("width",(w*0.2)+'px');
+				$(".texte-front").css("height",(w*0.2)+'px');
+				$(".texte-front").css("font-size",(w*0.018)+'px');
+				$(".texte-front").css("top",(w*0.12)+'px');
+				$(".texte-front").css("left",(w*0.0)+'px');
+
+				$("#footer").css("padding",(w*0.02)+'px');
+				$("#footer-left").css("padding-right",(w*0.02)+'px');
+				$("#footer-left").css("width",(w*0.8)+'px');
+				$("#footer-right").css("padding-top",(w*0.015)+'px');
+
+				$("#logo").css("width",(w*0.105)+'px');
+				$(".accroche").css("font-size",(w*0.03)+'px');
+				$(".signature").css("font-size",(w*0.03)+'px');
+
+			}
 
 			$(".card").css("width",(w*0.2)+'px');
 			$(".card").css("height",(w*0.2)+'px');
@@ -170,7 +227,7 @@
 
 			
 
-			var margev = 0.06;
+			
 			//$("#bandeau").css("height",(w*0.4)+'px');
 			$("#bandeau").css("padding-top",(w*margev)+'px');
 			$("#bandeau").css("padding-bottom",(w*margev)+'px');
@@ -179,12 +236,6 @@
 			
 
 
-
-			$(".texte-front").css("width",(w*0.2)+'px');
-			$(".texte-front").css("height",(w*0.2)+'px');
-			$(".texte-front").css("font-size",(w*0.018)+'px');
-			$(".texte-front").css("top",(w*0.12)+'px');
-			$(".texte-front").css("left",(w*0.0)+'px');
 			
 
 			$(".dessin-front").css("width",(w*0.2)+'px');
@@ -195,11 +246,7 @@
 			$(".icon").css("top",(w*0.02)+'px');
 			$(".icon").css("left",(w*0.065)+'px');
 
-			$(".texte-back").css("width",(w*0.2)+'px');
-			$(".texte-back").css("height",(w*0.2)+'px');
-			$(".texte-back").css("font-size",(w*0.02)+'px');
-			$(".texte-back").css("top",(w*0.04)+'px');
-			$(".texte-back").css("left",(w*0.0)+'px');
+
 			
 			$(".dessin-back").css("width",(w*0.2)+'px');
 			$(".dessin-back").css("height",(w*0.2)+'px');
@@ -209,19 +256,12 @@
 			
 			
 			
-			$("#footer").css("padding",(w*0.02)+'px');
-			$("#footer-left").css("padding-right",(w*0.02)+'px');
-			$("#footer-left").css("width",(w*0.8)+'px');
-			$("#footer-right").css("padding-top",(w*0.015)+'px');
+		
 
 			
-			$("#logo").css("width",(w*0.105)+'px');
-			$(".accroche").css("font-size",(w*0.03)+'px');
-			$(".signature").css("font-size",(w*0.03)+'px');
+		
 			
-			$("#titre").css("font-size",(w*0.03)+'px');
-			$("#soustitre").css("font-size",(w*0.022)+'px');
-			$("#explication").css("margin-top",(w*margev)+'px');
+
 
 
 
