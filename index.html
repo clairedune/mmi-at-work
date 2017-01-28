@@ -169,7 +169,10 @@
 
 
 			if(w<600){
-				$(".card").css("display","block");
+				$(".cards").css("display","block");
+				$(".card").css("float","left");
+				$(".card").css("padding-right",w*0.02+'px');
+
 				margev = 0.4;
 				$("#titre").css("font-size",(w*0.05)+'px');
 				$("#soustitre").css("font-size",(w*0.04)+'px');
